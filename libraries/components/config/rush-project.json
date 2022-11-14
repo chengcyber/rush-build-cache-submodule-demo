@@ -1,0 +1,15 @@
+/**
+ * The "config/rush-project.json" file configures Rush-specific settings for an individual project
+ * in a Rush monorepo.  More documentation is available on the Rush website: https://rushjs.io
+ */
+{
+  "$schema": "https://json-schema.byteintl.net/rush/rush-project.json",
+  "operationSettings": [
+    {
+      "operationName": "build",
+      "outputFolderNames": [
+        "dist"
+      ]
+    }
+  ]
+}
