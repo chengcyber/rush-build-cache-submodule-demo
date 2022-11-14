@@ -1,12 +1,21 @@
 lockfileVersion: 5.3
 
-specifiers:
-  '@rush-temp/env': file:./projects/env.tgz
-  typescript: 4.8.4
+importers:
 
-dependencies:
-  '@rush-temp/env': file:projects/env.tgz
-  typescript: 4.8.4
+  .:
+    specifiers: {}
+
+  ../../libraries/components:
+    specifiers:
+      typescript: 4.8.4
+    devDependencies:
+      typescript: 4.8.4
+
+  ../../ts-code-demo/env:
+    specifiers:
+      typescript: 4.8.4
+    devDependencies:
+      typescript: 4.8.4
 
 packages:
 
@@ -14,12 +23,4 @@ packages:
     resolution: {integrity: sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: false
-
-  file:projects/env.tgz:
-    resolution: {integrity: sha512-dLDe9YwVajV0JE3wscGYtbPC2/U3DeM1MCix5fLv3T0xdWEYn1IcnfpNdJX069yzGY7VWZ3Ttom3PhMvRFsBmA==, tarball: file:projects/env.tgz}
-    name: '@rush-temp/env'
-    version: 0.0.0
-    dependencies:
-      typescript: 4.8.4
-    dev: false
+    dev: true
