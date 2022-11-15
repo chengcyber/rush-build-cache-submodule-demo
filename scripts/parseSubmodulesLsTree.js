@@ -38,7 +38,7 @@ function getSubmodulesLsTreeOutput(output) {
 
   // Enter '<submoduleFolder>'...\n
   // <hash> <path> (heads/main)\n
-  output.split(os.EOL).forEach((line) => {
+  output.split('\n').forEach((line) => {
     if (line) {
       line = line.trim();
       submoduleFolder = line.match(/'(.*)'/)?.[1];
@@ -65,7 +65,7 @@ function getSubmodulePaths(output) {
   const submodulePaths = [];
 
   // <hash> <path> (heads/main)\n
-  output.split(os.EOL).map((line) => {
+  output.split('\n').map((line) => {
     if (line) {
       const [_hash, submoduleFolder] = line.trim().split(" ");
       submodulePaths.push(submoduleFolder);
