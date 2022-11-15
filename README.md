@@ -23,9 +23,11 @@ rush build
 
 ## Expected Result
 
-Rush.js no more complains about hashing a submodule folder
+1. Rush.js no more complains about hashing a submodule folder
 
 ```
 Analyzing repo state... Error calculating the state of the repo. (inner error: Error: git hash-object exited with status 128: fatal: Unable to hash ts-code-demo
 ). Continuing without diffing files.
 ```
+
+2. file hashs under git submodules are correctly collected as well
