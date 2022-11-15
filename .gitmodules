@@ -1,3 +1,6 @@
 [submodule "ts-code-demo"]
 	path = ts-code-demo
 	url = git@github.com:chengcyber/ts-code-demo.git
+[submodule "ts-code-demo2"]
+	path = ts-code-demo2
+	url = git@github.com:chengcyber/ts-code-demo.git
