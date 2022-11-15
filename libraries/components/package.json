@@ -7,10 +7,11 @@
   "author": "Cheng Liu",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "rimraf dist && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "typescript": "4.8.4"
+    "typescript": "4.8.4",
+    "rimraf": "~3.0.2"
   }
 }
